@@ -13,7 +13,7 @@ import Footer from './components/Footer'
 
 export default function Home() {
   return (
-    <main className="bg-white flex flex-col px-[12em] py-4">
+    <main className="bg-white flex flex-col px-[15em] py-4">
       {/*Header */}
       <Header />
       {/*Banner */}

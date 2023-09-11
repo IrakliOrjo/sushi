@@ -223,8 +223,9 @@ const Menu = () => {
             {innerArray.map(item => {
                 console.log('mapped item', item)
                 return (
-                    <div className='flex flex-col border-[2px] justify-center items-center border-[black] py-4 px-11 rounded-lg'>
-                        <div className='h-[204px] w-[255px] rounded-md border mb-8 border-black'></div>
+                    <div key={item.id}
+                    className='flex flex-col border-[2px] justify-center items-center border-[black] py-4 px-11 rounded-lg'>
+                        <div className='h-[204px] w-[350px] rounded-md border mb-8 border-black'></div>
                         <div className='flex justify-between text-[.8rem] font-[500] mb-3 w-full text-black'>
                             <p>{item.rollName}</p>
                             <p>{item.rollWeight}</p>    

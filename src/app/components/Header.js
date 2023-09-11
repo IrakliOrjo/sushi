@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className='flex justify-between mb-[6em]'>
         <div>LOGO</div>
-        <ul className='flex gap-x-6 font-[600]'>
+        <ul className='flex gap-x-6 text-[1.3rem] font-[600]'>
             <li>
                 <Link href='#about'>О Нас</Link>
             </li>
