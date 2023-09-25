@@ -43,7 +43,7 @@ export default function Home() {
       {/*Contact Us */}
       <Contact />
       {/*Footer */}
-      {/* <Footer />*/}
+      <Footer />
     </main>
   )
 }
