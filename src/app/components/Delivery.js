@@ -7,31 +7,41 @@ const delivery = [
   },
   {
     id: 2,
-    info: 'Доставим ваш заказ в любое время суток'
+    info: 'Самовывоз из нашего ближайшего заведения'
   },
   {
     id: 3,
-    info: 'Доставим ваш заказ в любое время суток'
+    info: 'Безналичная оплата через сайт'
   },
   {
     id: 4,
-    info: 'Доставим ваш заказ в любое время суток'
+    info: 'Оплата наличными при получении'
   }
 ]
 
 const Delivery = () => {
   return (
-    <div className='flex flex-col mb-[10em]'>
-        <h2 className='font-[700] text-[#2d2b2b] mx-auto text-[2rem] mb-14'>Доставка и оплата</h2>
-        <div className='flex'>
-         {delivery.map(item => {
+    <div className='flex flex-col my-[8em]'>
+        <h2 className='font-[700] text-black mx-auto mb-8 text-[2.5rem]'>Доставка и оплата</h2>
+        <div className='flex  p-8 lg:p-20 lg:justify-center  lg:items-center'>
+          <div className='flex flex-col md:ml-24
+          justify-center items-center  lg:flex-row  xl:ml-20 '>
+         {delivery.map((item,index) => {
             return (
-                <div key={item.id} className='flex flex-col mx-auto text-center justify-center items-center'>
-                    <div className='bg-gray-400 w-[50px] h-[50px] rounded-full mb-6'></div>
-                    <p className='font-[500] max-w-[11.4em]'>{item.info}</p>
+                <div key={item.id} className='flex items-center  justify-center'>
+                  <div className={`relative  flex flex-col h-[8.2em] lg:w-[11.2em]
+                   ${index === 3 ? 'lg:w-[9.2em] ' : 'xl:w-[18.2em]'} `}>
+                    <div className='absolute flex items-center justify-center text-white font-[500]
+                     top-0 z-10 bg-zinc-800 w-[40px] h-[40px] rounded-full
+                     '>{index + 1}</div>
+                    {index > 2 ? '' : <div className='absolute top-5 z-0 w-[2px] h-[140px] lg:w-[220px] xl:w-[315px] lg:h-[2px] bg-slate-300 '></div>}
+                    <div className='absolute text-black text-[.9rem] xl:text-[1rem]  w-[25em] lg:w-[11em] xl:w-[15em] font-[500] top-0 left-14 lg:left-0 lg:top-14'>{item.info}</div>
+                    </div>
+                    
                 </div>
             )
          })}
+         </div>
         </div>
     </div>
   )

@@ -1,4 +1,5 @@
-
+"use client"
+import React,{useState, useEffect} from 'react'
 import Image from 'next/image'
 
 import Header from './components/Header'
@@ -10,29 +11,39 @@ import About from './components/About'
 import Reviews from './components/Reviews'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Sets from './components/Sets'
+import Promotions from './components/Promotions'
+
 
 export default function Home() {
+
+
+ 
+
+
   return (
-    <main className="bg-white flex flex-col px-[15em] py-4">
+    <main className="bg-white w-full overflow-hidden flex flex-col">
       {/*Header */}
       <Header />
       {/*Banner */}
       <Banner />
       {/*Doshi */}
       <Doshi />
+      <Sets /> 
       {/*Menu */}
-      <Menu />
+      {/* <Menu />*/}
       {/*Delivery */}
       <Delivery />
+      <Promotions />
       {/*Header */}
       {/*About */}
-      <About />
+     {/* <About />*/}
       {/*Reviews */}
-      <Reviews />
+     {/* <Reviews />*/}
       {/*Contact Us */}
       <Contact />
       {/*Footer */}
-      <Footer />
+      {/* <Footer />*/}
     </main>
   )
 }
