@@ -29,7 +29,7 @@ const doshiInfo = [
 
 const Sets = () => {
   return (
-    <div className='flex text-center justify-center items-center min-h-screen bg-white flex-col   mb-4'>
+    <div className='flex text-center px-2 justify-center items-center min-h-screen bg-white flex-col   mb-4'>
         <h2 className='font-[600] text-black mx-auto text-[2rem] md:text-[4rem] mt-[4em] md:mt-[1.5em] mb-11'>Сеты</h2>
         <p className='text-[1.4rem] text-black font-[500] self-center max-w-[25em] mb-11'>Вы можете добавить в сет дополнительные роллы и получить на них скидку 10%</p>
         <div className='grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:max-w-[80em]'>

@@ -49,7 +49,7 @@ const doshiInfo = [
 
 const Doshi = () => {
   return (
-    <div className='flex text-center items-center min-h-screen bg-[#f5f5f5] flex-col'>
+    <div className='flex text-center px-2 items-center min-h-screen bg-[#f5f5f5] flex-col'>
         <h2 className='font-[600] text-black mx-auto text-[2rem] md:text-[4rem] mt-[6em] md:mt-[2.5em] mb-11'>Роллы</h2>
         <p className='text-[1.4rem] text-black font-[500] self-center max-w-[25em] mb-11'>Только свежие продукты и оригинальные рецепты от японских поваров</p>
         <div className='grid grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:max-w-[100em]'>

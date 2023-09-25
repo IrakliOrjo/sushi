@@ -42,8 +42,8 @@ const Header = () => {
         <div 
         onClick={() => setNavMobile(!navMobile)}
         className='md:hidden  self-center'>
-            {!navMobile && <AiOutlineMenu className='text-slate-200 bg-slate-500 bg-opacity-70 rounded-2xl w-12 h-8 cursor-pointer' />}
-      {navMobile && <AiOutlineClose className='text-slate-200 bg-slate-500 bg-opacity-70 rounded-2xl w-12 h-8 cursor-pointer' />}
+            {!navMobile && <AiOutlineMenu className='text-slate-200 bg-opacity-70 rounded-2xl w-12 h-8 cursor-pointer' />}
+      {navMobile && <AiOutlineClose className='text-slate-200  bg-opacity-70 rounded-2xl w-12 h-8 cursor-pointer' />}
         </div>
         <div className={`${
             navMobile ? 'h-[220px]' : 'max-h-0'
